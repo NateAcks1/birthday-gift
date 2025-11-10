@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, My Love 🎉</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div id="floating-hearts-container" aria-hidden="true"></div>
+
+    <!-- Unlock Section -->
+    <main id="unlock" class="page page--active">
+        <section class="card card--unlock">
+            <h1 class="heading">🎁 Special Surprise 🎁</h1>
+            <p class="subheading">Select your birthday to unlock your gift 💖</p>
+
+            <div class="unlock-image">
+                <img src="Happy Birthday.png" alt="Special moment" class="unlock-image__img" />
+            </div>
+
+            <label class="label" for="birthdayInput">Your Birthday</label>
+            <!-- The unlock date is validated in script.js. Default: 2006-11-11 -->
+            <input id="birthdayInput" type="date" class="input-date" />
+
+            <button id="unlockBtn" class="btn btn-primary glow">Unlock My Gift 💝</button>
+            <p id="unlockMessage" class="message" role="alert" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <!-- Main Birthday Page (hidden until unlocked) -->
+    <div id="main" class="page page--hidden">
+        <header class="hero">
+            <h2 class="hero__title">🎉 Happy Birthday, Elorm! 🎉</h2>
+            <p class="hero__subtitle">On this special day, I celebrate you and all the beautiful moments we share together. 💕</p>
+        </header>
+
+        <!-- Make a Wish Section -->
+        <section id="wish" class="section section--wish">
+            <h3 class="section__title">Make a Wish 🎂</h3>
+            <div class="cake" aria-label="Birthday cake">
+                <div class="cake__plate"></div>
+                <div class="cake__body">
+                    <div class="cake__frosting"></div>
+                    <div class="cake__sprinkles"></div>
+                </div>
+                <div class="candle candle--far-left">
+                    <div class="candle__wick"></div>
+                    <div class="candle__flame" aria-hidden="true"></div>
+                    <div class="candle__smoke" aria-hidden="true"></div>
+                </div>
+                <div class="candle candle--left">
+                    <div class="candle__wick"></div>
+                    <div class="candle__flame" aria-hidden="true"></div>
+                    <div class="candle__smoke" aria-hidden="true"></div>
+                </div>
+                <div class="candle candle--center">
+                    <div class="candle__wick"></div>
+                    <div class="candle__flame" aria-hidden="true"></div>
+                    <div class="candle__smoke" aria-hidden="true"></div>
+                </div>
+                <div class="candle candle--right">
+                    <div class="candle__wick"></div>
+                    <div class="candle__flame" aria-hidden="true"></div>
+                    <div class="candle__smoke" aria-hidden="true"></div>
+                </div>
+                <div class="candle candle--far-right">
+                    <div class="candle__wick"></div>
+                    <div class="candle__flame" aria-hidden="true"></div>
+                    <div class="candle__smoke" aria-hidden="true"></div>
+                </div>
+            </div>
+            <button id="wishBtn" class="btn btn-primary glow">Blow out the candles 🎂</button>
+            <!-- Optional whoosh sound (can be replaced). Loaded but not autoplayed. -->
+            <audio id="whoosh" preload="auto">
+                <source src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_5a8b3a0c03.mp3?filename=whoosh-6316.mp3" type="audio/mpeg" />
+            </audio>
+        </section>
+
+        <!-- Our Love Story Section -->
+        <section id="story" class="section section--story">
+            <h3 class="section__title">Our Story 💞</h3>
+            <div class="story-grid">
+                <article class="story-card reveal-on-scroll">
+                    <h4>From the First Day 💐</h4>
+                    <p>From the very first day we met, my world started to feel brighter. Every smile, every laugh — it all began with you.</p>
+                </article>
+                <article class="story-card reveal-on-scroll">
+                    <h4>Growing Together 🌸</h4>
+                    <p>Through every moment, good or bad, we’ve learned, loved, and grown side by side. You’ve become my favorite part of every day.</p>
+                </article>
+                <article class="story-card reveal-on-scroll">
+                    <h4>Forever & Always 💍</h4>
+                    <p>No matter where life takes us, I’ll always choose you — again and again. You are my forever and always.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Our Memories Section -->
+        <section id="memories" class="section section--memories">
+            <h3 class="section__title">Our Memories 📸</h3>
+            <div class="gallery">
+                <!-- Using all unique local images from the projects folder -->
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="8cc0d819-eaa0-437d-bb64-5ac4e835aea9.JPG" alt="Memory 1" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_3730.JPG" alt="Memory 2" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_4066.JPG" alt="Memory 3" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_4655.JPG" alt="Memory 4" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5061.JPG" alt="Memory 5" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="Locket from 3 Mar.png" alt="Memory 6" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_7292.JPG" alt="Memory 7" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5552.JPG" alt="Memory 8" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_4635.JPG" alt="Memory 9" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5620.JPG" alt="Memory 10" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5636.JPG" alt="Memory 11" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5643.JPG" alt="Memory 12" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5671.JPG" alt="Memory 13" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_5677.JPG" alt="Memory 14" />
+                </figure>
+                <figure class="gallery__item reveal-on-scroll">
+                    <img src="IMG_6243.JPG" alt="Memory 15" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="letter" class="section section--letter">
+            <h3 class="section__title">Love Letter 💌</h3>
+            <div class="envelope" id="envelope">
+                <div class="envelope__back"></div>
+                <div class="envelope__paper" id="letterPaper">
+                    <div class="letter__content" id="letterText"></div>
+                </div>
+                <div class="envelope__front">
+                    <div class="envelope__flap" id="envelopeFlap"></div>
+                    <div class="envelope__seal">💖</div>
+                </div>
+            </div>
+            <button id="revealGiftBtn" class="btn btn-primary glow">Click to Reveal Your Letter 💝</button>
+        </section>
+
+        <!-- Full-screen Love Letter Overlay -->
+        <div id="letterOverlay" class="overlay overlay--hidden" aria-hidden="true">
+            <div class="overlay__content">
+                <button id="overlayClose" class="btn btn-secondary overlay__close">✖ Close</button>
+                <h3 class="overlay__title">💌 My Love Letter To You</h3>
+                <div id="overlayLetter" class="overlay__letter"></div>
+            </div>
+        </div>
+
+        <!-- Optional Music Controls (starts after unlock) -->
+        <div class="music" id="musicControls" aria-hidden="true">
+            <button id="musicToggle" class="btn btn-secondary">♫ Play Music</button>
+            <audio id="bgm" loop>
+                <!-- Replace with your own track if you prefer -->
+                <source src="Nights Like This - The kid Laroi.mp3" type="audio/mpeg" />
+            </audio>
+        </div>
+
+        <footer class="footer">
+            <p>Made with love 💗</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
